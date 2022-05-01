@@ -294,7 +294,7 @@
             </objects>
             <point key="canvasLocation" x="1397" y="-107"/>
         </scene>
-        <!--Рузультат -->
+        <!--Результат -->
         <scene sceneID="0Ir-5r-Vrx">
             <objects>
                 <viewController id="sU5-Ox-sT6" customClass="ResultViewController" customModule="PersonalQuiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -328,13 +328,17 @@
                             <constraint firstAttribute="trailing" secondItem="S1E-KZ-HhC" secondAttribute="trailing" constant="16" id="knc-s4-RJ5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Рузультат " id="3UM-2H-bf9">
+                    <navigationItem key="navigationItem" title="Результат " id="3UM-2H-bf9">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="89S-EW-2ux">
                             <connections>
                                 <segue destination="lrL-OA-d4l" kind="unwind" unwindAction="unwindFor:" id="856-qJ-H31"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="ZRh-6x-TRc" id="U3Y-Bu-kZe"/>
+                        <outlet property="definitionLabel" destination="VQP-E6-M2l" id="Bab-Vm-4Ce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nO9-F4-nfd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="lrL-OA-d4l" userLabel="Exit" sceneMemberID="exit"/>
